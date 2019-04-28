@@ -41,6 +41,7 @@ public class pressSmile : MonoBehaviour
         if (!disabledButton)
         {
             GetComponent<AudioSource>().Play();
+            disabledButton = true;
 
             staticData.ChoiceHasBeenMade = true;
             sr.sprite = buttonPressed;

@@ -39,6 +39,7 @@ public class pressCheck : MonoBehaviour
     private void OnMouseDown()
     {
         if (!disabledButton) {
+            disabledButton = true;
             GetComponent<AudioSource>().Play();
 
             staticData.ChoiceHasBeenMade = true;

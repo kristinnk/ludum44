@@ -40,6 +40,7 @@ public class pressNo : MonoBehaviour
     {
         if (!disabledButton)
         {
+            disabledButton = true;
             GetComponent<AudioSource>().Play();
 
             staticData.ChoiceHasBeenMade = true;
